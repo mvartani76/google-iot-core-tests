@@ -167,4 +167,4 @@ If everything is setup/configured correctly, the following will show what the ou
 
 ## MQTTDeviceDemo
 
-![Nodejs MQTTDeviceDemo Output](https://github.com/mvartani76/google-iot-core-tests/images/nodejs-mqttDeviceDemo-working-output.png "Nodejs MQTTDeviceDemo Output")
+![Nodejs MQTTDeviceDemo Output](https://github.com/mvartani76/google-iot-core-tests/blob/master/images/nodejs-mqttDeviceDemo-working-output.png "Nodejs MQTTDeviceDemo Output")
