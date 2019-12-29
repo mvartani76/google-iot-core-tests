@@ -27,7 +27,10 @@ https://dl.google.com/go/go1.10.2.linux-armv6l.tar.gz
   EOF
 
   source ~/.bashrc
-
-  go version
 ```
+
+## Verify Working Install by checking version
+  ``` go version ```
+  
+  ![Golang version](https://github.com/mvartani76/google-iot-core-tests/blob/master/images/golang-version-test-output.png "Nodejs Golang Version - Successful Install")
 
