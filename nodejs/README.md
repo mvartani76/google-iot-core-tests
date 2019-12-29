@@ -60,6 +60,8 @@ Open a terminal window and run the following multi-line command to create an RS2
     -out rsa_cert.pem -subj "/CN=unused"
 ```
 
+In the following section, you'll add a device to the registry and associate the public key with the device.
+
 ## Add a device to the registry
 1. On the **Registries** page, select ```my-registry```.
 
@@ -73,16 +75,12 @@ Open a terminal window and run the following multi-line command to create an RS2
     - Copy the contents of rsa_cert.pem to the clipboard. Make sure to include the lines that say -----BEGIN CERTIFICATE----- and -----END CERTIFICATE-----.
     - Select **RS256_X509** for the **Public key format**.
     - Paste the public key in the **Public key value** box.
-    - Click **Add** to associate the RS256_X509 key with the device.
 
 6. The **Device metadata** field is optional; leave it blank.
 
 7. Click **Create**.
 
 You've just added a device to your registry. The RS256_X509 key appears on the Device details page for your device.
-
-
-In the following section, you'll add a device to the registry and associate the public key with the device.
 
 # Running the sample
 
