@@ -11,6 +11,14 @@ a device as described in the [Cloud IoT gateway docs](https://cloud.google.com/i
 
 # Setup
 
+Run the following command to install nvm (bash script for managing installations of Node.js and npm):
+
+    wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
+
+Run the following command to install the latest version of Node.js:
+
+    nvm install stable
+
 Run the following command to install the library dependencies for NodeJS:
 
     npm install
