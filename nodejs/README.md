@@ -160,3 +160,11 @@ For `listenForConfigMessages` example, try sending a config update to the device
 
         gcloud pubsub subscriptions pull --auto-ack \
             projects/my-iot-project/subscriptions/my-subscription
+
+# Verification of Running Code
+
+If everything is setup/configured correctly, the following will show what the outputs will look like on the device.
+
+## MQTTDeviceDemo
+
+![Nodejs MQTTDeviceDemo Output](https://github.com/mvartani76/google-iot-core-tests/images/nodejs-mqttDeviceDemo-working-output.png "Nodejs MQTTDeviceDemo Output")
