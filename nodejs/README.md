@@ -9,7 +9,7 @@ Note that before you can run this sample, you must register a device as
 described in the parent README. For the gateway samples, you must register and bind
 a device as described in the [Cloud IoT gateway docs](https://cloud.google.com/iot/docs/how-tos/gateways/#setup).
 
-# Setup
+# Setup Code Environment
 
 Run the following command to install nvm (bash script for managing installations of Node.js and npm):
 
@@ -24,6 +24,64 @@ Run the following command to install the latest version of Node.js:
 Run the following command to install the library dependencies for NodeJS:
 
     npm install
+
+# Configure Cloud Console Registry and Device
+
+## Create a Device Registry
+
+1. Go to the [Google Cloud IoT Core page in Cloud Console](https://console.cloud.google.com/iot).
+
+2. Click **Create registry.**
+
+3. Enter ```my-registry``` for the **Registry ID.**
+
+4. If you're in the US, select **us-central1** for the **Region.** If you're outside the US, select your preferred region.
+
+5. Select **MQTT** for the **Protocol**.
+
+6. In the **Default telemetry topic** dropdown list, select **Create a topic.**
+
+7. In the **Create a topic** dialog, enter ```my-device-events``` in the **Name** field.
+
+8. Click **Create** in the **Create a topic** dialog.
+
+9. The **Device state topic** and **Certificate value** fields are optional, so leave them blank.
+
+10. Click **Create** on the Cloud IoT Core page.
+
+You've just created a device registry with a Cloud Pub/Sub topic for publishing device telemetry events.
+
+## Generate a device key pair (on device)
+
+Open a terminal window and run the following multi-line command to create an RS256 key:
+
+```openssl req -x509 -newkey rsa:2048 -keyout rsa_private.pem -nodes \
+    -out rsa_cert.pem -subj "/CN=unused"
+```
+
+## Add a device to the registry
+1. On the **Registries** page, select ```my-registry```.
+
+2. Select the **Devices** tab and click **Create a device**.
+
+3. Enter ```my-device``` for the **Device ID**.
+
+4. Select **Allow** for **Device communication**.
+
+5. Add the public key information to the **Authentication** fields.
+- Copy the contents of rsa_cert.pem to the clipboard. Make sure to include the lines that say -----BEGIN CERTIFICATE----- and -----END CERTIFICATE-----.
+- Select **RS256_X509** for the **Public key format**.
+- Paste the public key in the **Public key value** box.
+- Click **Add** to associate the RS256_X509 key with the device.
+
+6. The **Device metadata** field is optional; leave it blank.
+
+7. Click **Create**.
+
+You've just added a device to your registry. The RS256_X509 key appears on the Device details page for your device.
+
+
+In the following section, you'll add a device to the registry and associate the public key with the device.
 
 # Running the sample
 
