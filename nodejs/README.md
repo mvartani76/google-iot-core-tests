@@ -55,7 +55,8 @@ You've just created a device registry with a Cloud Pub/Sub topic for publishing 
 
 Open a terminal window and run the following multi-line command to create an RS256 key:
 
-```openssl req -x509 -newkey rsa:2048 -keyout rsa_private.pem -nodes \
+```
+    openssl req -x509 -newkey rsa:2048 -keyout rsa_private.pem -nodes \
     -out rsa_cert.pem -subj "/CN=unused"
 ```
 
@@ -69,10 +70,10 @@ Open a terminal window and run the following multi-line command to create an RS2
 4. Select **Allow** for **Device communication**.
 
 5. Add the public key information to the **Authentication** fields.
-- Copy the contents of rsa_cert.pem to the clipboard. Make sure to include the lines that say -----BEGIN CERTIFICATE----- and -----END CERTIFICATE-----.
-- Select **RS256_X509** for the **Public key format**.
-- Paste the public key in the **Public key value** box.
-- Click **Add** to associate the RS256_X509 key with the device.
+    - Copy the contents of rsa_cert.pem to the clipboard. Make sure to include the lines that say -----BEGIN CERTIFICATE----- and -----END CERTIFICATE-----.
+    - Select **RS256_X509** for the **Public key format**.
+    - Paste the public key in the **Public key value** box.
+    - Click **Add** to associate the RS256_X509 key with the device.
 
 6. The **Device metadata** field is optional; leave it blank.
 
