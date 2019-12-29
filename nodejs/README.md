@@ -15,6 +15,8 @@ Run the following command to install nvm (bash script for managing installations
 
     wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
 
+You will probably need to close and restart the terminal to have changes take effect.
+
 Run the following command to install the latest version of Node.js:
 
     nvm install stable
