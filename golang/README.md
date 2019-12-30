@@ -70,10 +70,10 @@ The following command summarizes the sample usage:
 
 ```
   go run main.go \
-  --device=${DEVICE} \
-  --project=${PROJECT} \
-  --registry=${REGISTRY} \
-  --region=${REGION} \
+  --device=golang-device \
+  --project=<your-project-id> \
+  --registry=my-registry \
+  --region=us-central1 \
   --ca_certs=./roots.pem \
   --private_key=./rsa_private.pem
 ```
