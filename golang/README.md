@@ -63,3 +63,17 @@ In the following section, you'll add a device to the registry and associate the 
 7. Click **Create**.
 
 You've just added a device to your registry. The RS256_X509 key appears on the Device details page for your device.
+
+# Running the sample
+
+The following command summarizes the sample usage:
+
+```
+  go run main.go \
+  --device=${DEVICE} \
+  --project=${PROJECT} \
+  --registry=${REGISTRY} \
+  --region=${REGION} \
+  --ca_certs=./roots.pem \
+  --private_key=./rsa_private.pem
+```
