@@ -97,3 +97,4 @@ If everything is setup/configured correctly, the following will show what the ou
 
 # Useful Links
 https://medium.com/google-cloud/google-cloud-iot-core-golang-b130f65951ba
+https://github.com/GoogleCloudPlatform/golang-samples/tree/master/iot
