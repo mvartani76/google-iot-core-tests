@@ -77,3 +77,7 @@ The following command summarizes the sample usage:
   --ca_certs=./roots.pem \
   --private_key=./rsa_private.pem
 ```
+
+# Verification of Running Code
+
+If everything is setup/configured correctly, the following will show what the outputs will look like on the device.
