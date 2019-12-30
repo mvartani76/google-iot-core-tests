@@ -44,7 +44,18 @@ Open a terminal window and run the following multi-line command to create an RS2
 
 In the following section, you'll add a device to the registry and associate the public key with the device.
 
-## Add a device to the registry
+## Install Requirements
+
+The MQTT and jwt vars are not currently available so we need to get the following packages as shown below:
+
+```
+# jwt
+go get github.com/dgrijalva/jwt-go
+# MQTT
+go get github.com/eclipse/paho.mqtt.golang
+```
+
+## Add a device to the registry (console)
 1. On the **Registries** page, select ```my-registry```.
 
 2. Select the **Devices** tab and click **Create a device**.
@@ -64,7 +75,7 @@ In the following section, you'll add a device to the registry and associate the 
 
 You've just added a device to your registry. The RS256_X509 key appears on the Device details page for your device.
 
-# Running the sample
+# Running the sample (on device)
 
 The following command summarizes the sample usage:
 
@@ -83,3 +94,6 @@ The following command summarizes the sample usage:
 If everything is setup/configured correctly, the following will show what the outputs will look like on the device.
 
 ![Golang Main Output](https://github.com/mvartani76/google-iot-core-tests/blob/master/images/golang-main-working-output.png "Golang Main Output")
+
+# Useful Links
+https://medium.com/google-cloud/google-cloud-iot-core-golang-b130f65951ba
