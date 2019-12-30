@@ -81,3 +81,5 @@ The following command summarizes the sample usage:
 # Verification of Running Code
 
 If everything is setup/configured correctly, the following will show what the outputs will look like on the device.
+
+![Golang Main Output](https://github.com/mvartani76/google-iot-core-tests/blob/master/images/golang-main-working-output.png "Golang Main Output")
