@@ -28,3 +28,6 @@ Repository of code for testing Google IoT Core using various languages
 10. Click **Create** on the Cloud IoT Core page.
 
 You've just created a device registry with a Cloud Pub/Sub topic for publishing device telemetry events.
+
+## Useful Links
+https://cloud.google.com/sdk/docs/quickstart-debian-ubuntu
