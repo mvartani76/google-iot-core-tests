@@ -168,3 +168,7 @@ If everything is setup/configured correctly, the following will show what the ou
 ## MQTTDeviceDemo
 
 ![Nodejs MQTTDeviceDemo Output](https://github.com/mvartani76/google-iot-core-tests/blob/master/images/nodejs-mqttDeviceDemo-working-output.png "Nodejs MQTTDeviceDemo Output")
+
+## Useful Links
+https://cloud.google.com/iot/docs/quickstart
+https://cloud.google.com/iot/docs/how-tos/credentials/keys#generating_an_rs256_key
